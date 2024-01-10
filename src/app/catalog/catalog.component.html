@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="price">
-          <div [ngClass]="getDiscountedClasses(product)">{{ product.price | currency }}</div>
+          <div class="bold" [ngClass]="getDiscountedClasses(product)">{{ product.price | currency }}</div>
           <div *ngIf="product.discount > 0" class="discount">
             {{ (product.price * (1- product.discount)) | currency:'USD' }}
           </div>
