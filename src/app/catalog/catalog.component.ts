@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {IProduct} from "./product.model";
-import {CurrencyPipe, NgForOf, NgIf} from "@angular/common";
+import {CurrencyPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'bot-catalog',
@@ -8,7 +8,8 @@ import {CurrencyPipe, NgForOf, NgIf} from "@angular/common";
   imports: [
     NgForOf,
     NgIf,
-    CurrencyPipe
+    CurrencyPipe,
+    NgClass
   ],
   templateUrl: './catalog.component.html',
   styleUrl: './catalog.component.css'
