@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import {IProduct} from "./product.model";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'bot-catalog',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './catalog.component.html',
   styleUrl: './catalog.component.css'
